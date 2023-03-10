@@ -10,23 +10,14 @@ import { en, es, pt } from './lib/idiomas/total-idiomas.js'
 
 //cambia los números que sean propietarios 
 global.owner = [
-  ['525560066050', '🔰 𝐃𝐈𝐄𝐆𝐎 - 𝐂𝐑𝐄𝐀𝐃𝐎𝐑 🔰', true],
-  ['51993138466', '🔰  𝐃𝐎𝐑𝐑𝐀𝐓∆𝐁𝐎𝐓 - 𝙲𝙾𝙻𝙻𝙰𝙱𝙾𝚁𝙰𝚃𝙾𝚁 1 🔰', true],
-  ['573184314110', '🔰 𝐃𝐎𝐑𝐑𝐀𝐓∆𝐁𝐎𝐓 - 𝙲𝙾𝙻𝙻𝙰𝙱𝙾𝚁𝙰𝚃𝙾𝚁 3 🔰', true],
-  ['50246028932', '🔰  𝐃𝐎𝐑𝐑𝐀𝐓∆𝐁𝐎𝐓 - 𝙲𝙾𝙻𝙻𝙰𝙱𝙾𝚁𝙰𝚃𝙾𝚁 4 🔰', true],
-  ['584125778026'],
-  ['595986674310'],
-  ['51936767238'],
-  ['50495625729'],
-  ['593968585383'],
-  ['5219996125657'],
-  ['51957041866']
+  ['94775207710', '🔰 Black-KDX the Creator 🔰', true],
+  ['94702262806', '🔰  Mr Alone - 𝙲𝙾𝙻𝙻𝙰𝙱𝙾𝚁𝙰𝚃𝙾𝚁 1 🔰', true]
   
 
 ] 
-global.suittag = ['593959425714'] 
-global.mods = ['595986674310'] 
-global.prems = ['595986674310']
+global.suittag = ['94702262806'] 
+global.mods = ['94775207710'] 
+global.prems = ['94775207710']
 
 global.APIs = { // API Prefix
   // name: 'https://website'
@@ -85,7 +76,7 @@ global.APIKeys = { // APIKey Here
 global.lenguajeGB = en
 
 /* ______________________________________________ */
-global.creadorname = '𝐃𝐈𝐄𝐆𝐎-𝐎𝐅𝐂'
+global.creadorname = 'Black-KDX'
 global.creatorname = creadorname
 global.library = 'BAILEYS-MD'
 global.vs = 'V10'
@@ -100,19 +91,19 @@ global.mes = d.toLocaleDateString('es', { month: 'long' })
 global.año = d.toLocaleDateString('es', { year: 'numeric' })
 global.tiempo = d.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true })
 //------------- Sticker WM -----------
-global.packname = `𝐃𝐈𝐄𝐆𝐎-𝐎𝐅𝐂`
+global.packname = `Black-KDX`
 global.author = `©⏤͟͟͞𝐓𝐇𝐄 𝐃𝐎𝐑𝐑𝐀𝐓-𝐁𝐎𝐓-𝐌𝐃`
 //_______________
-global.wm = '𝐃𝐎𝐑𝐑𝐀𝐓-𝐁𝐎𝐓 | 𝐃𝐈𝐄𝐆𝐎-𝐎𝐅𝐂'
+global.wm = 'Black-KD-Bot | Black-KDX'
 global.db3t = `©⏤͟͟͞𝐓𝐇𝐄 𝐃𝐎𝐑𝐑𝐀𝐓-𝐁𝐎𝐓-𝐌𝐃`
 global.wm3 = db3t
-global.codex = `Diego-Ofc`
-global.igfg = '𝑫𝑶𝑹𝑹𝑨𝑻-𝑩𝑶𝑻'
-global.wait = '*[❕] CARGANDO POR FAVOR ESPERA...*'
+global.codex = `black-kdx`
+global.igfg = 'Black-KD'
+global.wait = '*[❕] LOADING PLEASE WAIT...*'
 //-------------------
 global.md = 'https://chat.whatsapp.com/JuuuUaIQnnE3t4SWQenShg'
 global.dorramd = md
-global.tarje = 'Banesco'
+global.tarje = 'Dark-Joker'
 global.yt = 'http://youtube.com/@diegogameplays82'
 global.youtube = yt
 //Menu
@@ -125,7 +116,7 @@ global.fg = '☆━━━━ ⚠️ 𝙵𝙰𝙻𝙻𝙾 ⚠️ ━━━☆'
 global.fallo = fg
 global.mg = '══ ❎ 𝙻𝙾 𝚄𝚂𝙾 𝙼𝙰𝙻 ❎ ══'
 global.mal = mg
-global.dorre = 'DORRAT-BOT-MD'
+global.dorre = 'Black-BOT-MD'
 global.DORRA = dorre
 
 /* Imagenes___________________ */
@@ -181,8 +172,8 @@ global.htka = '*☪ ••••̩̩͙⊰•⭑*'
 global.comienzo = '• • ◕◕════'
 global.fin = '════◕◕ • •'
 
-global.botdate = `⫹⫺ Date :  ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}`
-global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}`//America/Los_Angeles
+global.botdate = `⫹⫺ Date :  ${moment.tz('Asia/Colombo').format('DD/MM/YY')}`
+global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${moment.tz('Asia/Colombo').format('HH:mm:ss')}`//America/Los_Angeles
 global.fgif = {
             key: {
                  participant : '0@s.whatsapp.net'},
@@ -200,7 +191,7 @@ global.fgif = {
 
 /* _____________________________________ */
 
-global.multiplier = 999 // Cuanto más alto, más difícil subir de nivel | The higher, The harder levelup 
+global.multiplier = 999 // The higher, the harder to level up | The higher, The harder levelup
 
 global.rpg = {
 emoticon(string) {
