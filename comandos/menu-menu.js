@@ -27,38 +27,34 @@ let pp = './galeria/dorratmini.mp4'
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 let fsizedoc = '1'.repeat(10)
 let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardingScore: fsizedoc, externalAdReply: { showAdAttribution: true, title: wm, body: '👋 ' + username, mediaUrl: yt, description: 'Hola', previewType: 'PHOTO', thumbnail: await(await fetch(imagenMEnu.getRandom())).buffer(), sourceUrl: menulinks.getRandom() }}}
-m.reply(`[ 𝐂𝐀𝐑𝐆𝐀𝐍𝐃𝐎 𝐌𝐄𝐍𝐔... ]`)
+m.reply(`[ Loading menu... ]`)
 //no me roben la decoracion, no tengo creatividad
 
 let menuA = `
-*╭━━❍𝐃𝐎𝐑𝐑𝐀𝐓-𝐁𝐎𝐓-𝐌𝐃❍━━╮*
+*╭━━❍Black-Bot-MD❍━━╮*
 *┃ ╭━━━━━━━━━━━━━━━━╮*
 *┃ ┃ ╭┈────────────╮*
-*┃ ┃ │❍  𝐌𝐄𝐍𝐔 ❍*
+*┃ ┃ │❍  MENU ❍*
 *┃ ┃ ╰┈────────────╯*
 *┃ ╰━━━━━━━━━━━━━━━━╯*
-*┣━━━▢ ❤𝐇𝐎𝐋𝐀, ${username}❤*•
+*┣━━━▢ ❤HI, ${username}❤*•
 *┃╭━━━━━━━━━━━━━━━━╾•*
 *┃┃  ❍ ${ucapan()} ❍*
 *┃┣━━━━━━━━━━━━━━━━╾•*
-*┃┃ ⋄ CREADOR DEL BOT:  ${creatorname}*
-*┃┃ ⋄ NUMERO DEL CREADOR: wa.me/593959425714 (𝐍𝐎 𝐁𝐎𝐓)*
+*┃┃ ⋄ BOT CREATOR:  ${creatorname}*
+*┃┃ ⋄ CREATOR NUMBER: wa.me/94775207710 (𝐍𝐎 𝐁𝐎𝐓)*
 *┃┃ ⋄ VERSION » ${vs}*
-*┃┃ ⋄ FECHA » ${week}, ${date}*
-*┃┃ ⋄ TIEMPO ACTIVO » ${uptime}*
-*┃┃ ⋄ LIBRERIA » ${library}*
-*┃┃ ⋄ LENGUAJE » 𝐄𝐒𝐏𝐀𝐍̃𝐎𝐋*
-*┃┃ ⋄ USUARIOS » ${Object.keys(global.db.data.users).length}*
+*┃┃ ⋄ DATE » ${week}, ${date}*
+*┃┃ ⋄ ACTIVE TIME » ${uptime}*
+*┃┃ ⋄ BOOKSHOP » ${library}*
+*┃┃ ⋄ LANGUAGE » English*
+*┃┃ ⋄ USERS » ${Object.keys(global.db.data.users).length}*
 *┃╰━━━━━━━━━━━━━━━━╾•*
 *╰━━━╼𝐃𝐎𝐑𝐑𝐀𝐓-𝐁𝐎𝐓-𝐌𝐃╾━━━╯*`.trim()
 
 let menuB = `
-*═〔 INFO DEL USUARIO 〕⬣═*
-*║👤 NOMBRE: ${username}*
-*║🧰 EXPERIENCIA ➟ ${exp}*
-*║⚓ RANGO ➟* ${role}*
-*║💎 DIAMANTES ➟ ${limit}*
-*║💸 DOLARES ➟ ${dolares}*
+*═〔 USER INFO 〕⬣═*
+*║👤 NAME: ${username}*
 *╰══*═════════════ *✧*
 
 ╔═════ INFO-BOT ═════╗ 
@@ -70,29 +66,22 @@ let menuB = `
 ║ ❒ _${usedPrefix}grouplist_
 ║ ❒ _${usedPrefix}owner_
 ║ ❒ _${usedPrefix}script_
-║ ❒︎ _Bot_ (𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)
+║ ❒︎ _Bot_ (use without prefix)
 ╚════ ≪ •❈• ≫ ════╝
 
 ╔═════ REPORTAR ═════╗ 
-║ ❒ _*Reporta con este comando de haber*_
-║ ❒ _*Fallas para poder Solucionar!!*_
+║ ❒ _*Report with this command if you have*_
+║ ❒ _*Failures to be able to Solve!!*_
 ║════════════════════════
-║︎ ❒ _${usedPrefix}reporte *texto*_
-║ ❒ _${usedPrefix}report *texto*_
-╚════ ≪ •❈• ≫ ════╝
-
-╔═══ MINECRAFT SERVER  ═══╗ 
-║══════════════
-║ ❒ *IP: nodo5.boxmineworld.com*
-║ ❒ *PUERTO: 4003*
-║ ❒ *BEDROCK Y JAVA*
+║︎ ❒ _${usedPrefix}reporte *text*_
+║ ❒ _${usedPrefix}report *text*_
 ╚════ ≪ •❈• ≫ ════╝
 
 ╔═════════════╗ 
-║ *<UNE UN BOT A TU GRUPO/>*
+║ *<JOIN A BOT TO YOUR GROUP/>*
 ║══════════════════
-║ ➱_${usedPrefix}join *link del grupo*_ 
-║ ➱_*minimo 30 miembros*_
+║ ➱_${usedPrefix}join *group link*_ 
+║ ➱_*minimum 30 members*_
 ╚════ ≪ •❈• ≫ ════╝
 
 ╔═════ JADIBOT 🤖 ═════╗ 
@@ -102,57 +91,10 @@ let menuB = `
 ╚════ ≪ •❈• ≫ ════╝
 
 ╔═════ RPG ═════╗ 
-║ ❒ ${usedPrefix}cazar
-║ ❒ ${usedPrefix}aventura
-║ ❒ ${usedPrefix}balance
-║ ❒︎ ${usedPrefix}claim
-║ ❒︎ ${usedPrefix}top
-║ ❒︎ ${usedPrefix}heal
-║ ❒ ${usedPrefix}cartera
-║ ❒ ${usedPrefix}inventory 
-║ ❒︎ ${usedPrefix}levelup
-║ ❒︎ ${usedPrefix}myns
-║ ❒ ${usedPrefix}perfil
 ║ ❒︎ ${usedPrefix}work
-║ ❒ ${usedPrefix}rob <@tag
-║ ❒︎ ${usedPrefix}minar
-║ ❒︎ ${usedPrefix}buy
-║ ❒ ${usedPrefix}minardiamantes 
-║ ❒ ${usedPrefix}minardorracoins 
-║ ❒︎ ${usedPrefix}transfer <tipo> <cantidad> <@tag
+║ ❒︎ ${usedPrefix}transfer <type> <quantity> <@tag
 ║ ❒ ${usedPrefix}verificar
-║ ❒︎ ${usedPrefix}unreg <numero de serie>
-╚════ ≪ •❈• ≫ ════╝
-
-╔═════ GAMES ═════╗ 
-║ ❒ ${usedPrefix}es facil
-║ ❒ ${usedPrefix}suitpvp <@tag>
-║ ❒ ${usedPrefix}mates <noob / easy / medium / hard / extreme /impossible /impossible2>
-║ ❒ ${usedPrefix}ppt <papel / tijera /piedra
-║ ❒ ${usedPrefix}prostituto <nombre / @tag
-║ ❒ ${usedPrefix}prostituta <nombre / @tag
-║ ❒ ${usedPrefix}hetero <nombre / @tag
-║ ❒ ${usedPrefix}gay2 <nombre / @tag
-║ ❒ ${usedPrefix}lesbiana <nombre / @tag
-║ ❒ ${usedPrefix}pajero <nombre / @tag
-║ ❒ ${usedPrefix}pajera <nombre / @tag
-║ ❒ ${usedPrefix}puto <nombre / @tag
-║ ❒ ${usedPrefix}puta <nombre / @tag
-║ ❒ ${usedPrefix}manco <nombre / @tag
-║ ❒ ${usedPrefix}manca <nombre / @tag
-║ ❒ ${usedPrefix}rata <nombre / @tag
-║ ❒ ${usedPrefix}love <nombre / @tag
-║ ❒ ${usedPrefix}doxear <nombre / @tag
-║ ❒ ${usedPrefix}pregunta <texto
-║ ❒ ${usedPrefix}slot <apuesta
-║ ❒ ${usedPrefix}simi <texto
-║ ❒ ${usedPrefix}topgays
-║ ❒ ${usedPrefix}topotakus
-║ ❒ ${usedPrefix}formarpareja
-║ ❒ ${usedPrefix}formarpareja5 
-║ ❒ ${usedPrefix}amistad
-║ ❒ ${usedPrefix}verdad
-║ ❒ ${usedPrefix}reto
+║ ❒︎ ${usedPrefix}unreg <serial number>
 ╚════ ≪ •❈• ≫ ════╝
 
 ╔═════ ENABLE/DISABLE ═════╗ 
@@ -183,7 +125,7 @@ let menuB = `
 ║ ❒ ${usedPrefix}disable *temporal*_
 ╚════ ≪ •❈• ≫ ════╝
 
-┌─「💻𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑」
+┌─「💻Downloader」
 ├➢${usedPrefix}videodocumento <enlace / link / url
 ├➢${usedPrefix}facebook <enlace / link / url
 ├➢${usedPrefix}instagram <enlace / link / url
@@ -201,13 +143,13 @@ let menuB = `
 ├➢${usedPrefix}pinteret <texto
 ├➢${usedPrefix}wallpaper <texto
 ├➢${usedPrefix}wallpaper2 <texto
-├➢${usedPrefix}pptiktok <nombre de usuario
-├➢${usedPrefix}igstalk <nombre de usuario
-├➢${usedPrefix}tiktokstalk <nombre de usuario
+├➢${usedPrefix}pptiktok <Username
+├➢${usedPrefix}igstalk <Username
+├➢${usedPrefix}tiktokstalk <Username
 └────ׂ─ׂ─ׂ─ׂ──
 
-┌──「🏢𝐆𝐑𝐎𝐔𝐏」─
-├➢${usedPrefix}add *<número>*
+┌──「🏢Group」─
+├➢${usedPrefix}add *<number>*
 ├➢${usedPrefix}kick *<@tag>*_
 ├➢${usedPrefix}kick2 *<@tag>*_
 ├➢${usedPrefix}listanum *<texto>*_
@@ -218,13 +160,13 @@ let menuB = `
 ├➢${usedPrefix}listadv
 ├➢${usedPrefix}deladvertencia <@tag
 ├➢${usedPrefix}advertencia <@tag
-├➢${usedPrefix}grouptime *<opcion> <tiempo>*_
+├➢${usedPrefix}grouptime *<option> <time>*_
 ├➢${usedPrefix}grupo <abrir / cerrar
 ├➢${usedPrefix}promote <@tag
 ├➢${usedPrefix}demote <@tag
 ├➢${usedPrefix}banchat
 ├➢${usedPrefix}unbanchat
-├➢admins *<texto>_ (𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)
+├➢admins *<texto>_ (use without prefix)
 ├➢${usedPrefix}demote <@tag
 ├➢${usedPrefix}infogroup
 ├➢${usedPrefix}link
@@ -238,21 +180,21 @@ let menuB = `
 ├➢${usedPrefix}destraba 
 └────ׂ─ׂ─ׂ─ׂ───
 
-┌──「🛡️𝐆𝐈𝐓𝐇𝐔𝐁」─
+┌──「🛡️Github」─
 ├➢/instalarbot
 └────ׂ─ׂ─ׂ─ׂ───
 
-┌──「🎑𝐂𝐎𝐍𝐕𝐄𝐑𝐓𝐈𝐃𝐎𝐑𝐄𝐒」
-├➢_${usedPrefix}togifaud *<responde a un video>*_
-├➢_${usedPrefix}toimg *<responde a un sticker>*_
-├➢_${usedPrefix}tomp3 *<responde a un video / nota de voz>*_
-├➢_${usedPrefix}toptt *<responde a un video / audio>*_
+┌──「🎑Converters」
+├➢_${usedPrefix}togifaud *<respond to a video>*_
+├➢_${usedPrefix}toimg *<respond to a sticker>*_
+├➢_${usedPrefix}tomp3 *<respond to a video / voice note>*_
+├➢_${usedPrefix}toptt *<respond to a video / audio>*_
 ├➢_${usedPrefix}tovideo *<responde a un sticker>*_
-├➢_${usedPrefix}tourl *<responde a un video / imagen / audio>*_
+├➢_${usedPrefix}tourl *<respond to a video / imagen / audio>*_
 ├➢_${usedPrefix}tts es *<texto>*_
 └────ׂ─ׂ─ׂ─ׂ───
 
-┌──「📑𝐋𝐎𝐆𝐎𝐒」─
+┌──「📑Logos」─
 ├➢${usedPrefix}logos <efecto <texto
 ├➢${usedPrefix}simpcard <@tag
 ├➢${usedPrefix}hornycard <@tag
