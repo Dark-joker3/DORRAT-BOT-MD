@@ -82,7 +82,7 @@ global.APIKeys = { // APIKey Here
 }
 
 
-global.lenguajeGB = es
+global.lenguajeGB = en
 
 /* ______________________________________________ */
 global.creadorname = '𝐃𝐈𝐄𝐆𝐎-𝐎𝐅𝐂'
