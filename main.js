@@ -66,7 +66,7 @@ global.db.chain = chain(global.db.data)
 }
 loadDatabase()
 
-global.authFile = `Dorrat-BotSession`
+global.authFile = `BotSession`
 const { state, saveState, saveCreds } = await useMultiFileAuthState(global.authFile)
 
 const connectionOptions = {
